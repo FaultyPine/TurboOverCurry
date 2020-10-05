@@ -1,9 +1,6 @@
 use smash::phx::*;
 
-pub static mut GLOBAL_FRAME_COUNT: [i32;8] = [0;8];
-pub static mut AQUIRED_TURBO_FRAME: [i32;8] = [0;8];
-
-pub const TURBO_DURATION: i32 = 1200; // length of turbo mode (in frames) -- must be greater than "gekikara_frame" in item.prc
+pub static mut IS_TURBO: [bool;8] = [false;8];
 
 pub const TURBO_ACTIVE_EFFECT_STR: &str = "sys_revenge_aura";
 pub const TURBO_DEACTIVATE_EFFECT_STR: &str = "sys_sp_flash";
